@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-image: url('./image/Fundo header(2).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 103vh;
+  margin: 0;
+}
+
+header h1{
+ transform: skew(-15deg);
+}
+
+.container {
+  width: 90%;         
+  max-width: 1200px;  
+  margin: 0 auto;     
+  padding: 20px;       
+}
+
+
+.container div, h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 5em;
+      font-family: 'Anton', sans-serif;
+     
+}
+
+header button{
+  padding: 1em;
+  background-color: rgba(250, 254, 14, 0.978);
+  border: none;               /* remove a borda padrão */
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Anton', sans-serif; /* se quiser usar a fonte Anton */
+  font-size: 1.2em;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.8em;
+  color: white;
+}
+
+h2::before {
+  content: '';              
+  position: absolute;
+  left: 0;                 
+  top: 50%;               
+  transform: translateY(-50%);
+  width: 50px;             
+  height: 90px;
+  background-image: url('/image/_FC313725-1115-4406-9893-3313C38AD9A2_-removebg-preview.png'); /* sua imagem */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1.1;           
+  z-index: 0;              
+  margin-left: -60px;
+}
+
+.Sobre {
+  background-color: #141414;
+  padding: 50px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Linha fina, branca e transparente */
+  
+  
+}
+
+.Sobre .container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 300px; 
+  margin-top: -160px;
+}
+
+.sobre-texto {
+  text-align: left;           
+  flex: 1;                    
+  max-width: 400px;
+ 
+}
+
+.Sobre h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 35PX;   
+  color: rgba(250, 254, 14, 0.978);
+  margin-bottom: 10px;
+  text-align: left; 
+  max-width: 100%;
+  transform: skew(-15deg); 
+}
+
+.Sobre p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;  
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 110px;
+   text-align: left; 
+}
+
+
+
+.sobre-imagem {
+  display: flex;
+  flex-direction: column;    
+  gap: 10px;                
+  flex-shrink: 0;            
+  margin-left: -140px;          
+  justify-content: flex-start; 
+}
+
+
+.sobre-imagem img {
+  max-width: 250px;         
+  border-radius: 10px; 
+}
+
+
+.sobre-imagem img:first-child {
+  align-self: flex-start;  
+}
+
+#img1{
+  margin-left: -50px;
+}
+
+#imag2{
+  margin-left: 210px;
+  margin-top: -100px;
+}
+
+
+.oque-oferecemos {
+  background-color: #1a1a1a;
+  padding: 50px 20px;
+  background-color: #141414;
+  padding: 50px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Linha fina, branca e transparente */
+  
+}
+
+.Oque-oferecemso h1{
+ font-family: 'Anton', sans-serif;
+  font-size: 60PX;   
+  color: rgba(250, 254, 14, 0.978);
+  margin-bottom: 10px;
+  text-align: center; 
+  max-width: 100%;
+  transform: skew(-15deg); 
+
+}
+
+.oque-oferecemos h2, p{
+   height: 60px;
+   color: white;
+}
+
+.Oque-oferecemos{
+  margin-top: -150px;
+  align-items: center;
+  text-align: center;
+
+}
+
+/* Estilo para o contêiner dos cards */
+.cards {
+  display: flex;                 /* Usando flexbox para dispor os cards lado a lado */
+  justify-content: space-between; /* Espaço igual entre os cards */
+  gap: 20px;                     /* Espaçamento entre os cards */
+  margin-top: 20px;               /* Espaço acima dos cards */
+  flex-wrap: wrap;                /* Permite que os cards quebrem em telas menores */
+  width: 100%;                    /* Garante que o contêiner ocupe toda a largura disponível */
+  margin-bottom: 4em;
+}
+
+/* Estilo para cada card */
+.card {
+  position: relative;             /* Necessário para posicionar o h3 sobre a imagem */
+  width: calc(33.33% - 20px);     /* Cada card ocupa 1/3 da largura do contêiner, menos o espaçamento */
+  background-color: #fff;         /* Cor de fundo branca para os cards */
+  text-align: center;             /* Centraliza o conteúdo dos cards */
+  border-radius: 8px;             /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px;            /* Espaço abaixo de cada card */
+}
+
+/* Estilo para as imagens dentro dos cards */
+.card img {
+  width: 100%;                    /* A imagem ocupa toda a largura do card */
+  height: 580px;                  /* Altura fixa para as imagens */
+  object-fit: cover;              /* Garante que a imagem preencha sem distorcer */
+  border-radius: 5px;             /* Borda arredondada para a imagem */
+  display: block;
+}
+
+/* Estilo para o título dentro do card */
+.card h3 {
+  font-size: 2em;                 /* Tamanho do título do card */
+  position: absolute;             /* O título será posicionado sobre a imagem */
+  top: 40%;                       /* Coloca o título no meio da imagem (verticalmente) */
+  left: 33%;                      /* Coloca o título no meio da imagem (horizontalmente) */
+  transform: translate(-50%, -50%); /* Ajusta a posição do título para que ele fique centrado corretamente */
+  color: rgba(255, 255, 255, 0.978); /* Cor do título */
+  font-family: 'Anton', sans-serif;  /* Fonte personalizada */
+  text-align: center;             /* Centraliza o texto do título */
+  margin: 0;                       /* Remove a margem para evitar qualquer deslocamento indesejado */
+   transform: skew(-15deg); 
+
+}
+
+
+card, p.card-text{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;          /* posiciona na parte inferior do card */
+  left: 0;            /* começa do lado esquerdo */
+  width: 100%;        /* ocupa toda a largura do card */
+  height: 50%;        /* ocupa metade da altura do card */
+  display: flex;      /* para centralizar o texto verticalmente */
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  background-color:  rgba(250, 254, 14, 0.978); /* fundo branco */
+}
+
+.entre-em-contato {
+  position: relative;
+  background-image: url('./image/fundo-final.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 2em; /* espaçamento interno no topo */
+  padding-bottom: 0;
+  color: #000;
+  font-weight: bold;
+  background-color: #000;
+}
+
+/* Overlay cobrindo a metade inferior da tela */
+.entre-em-contato::after {
+  content: "";
+  position: absolute;
+  bottom: 0;          /* começa na parte inferior */
+  left: 0;
+  width: 100%;
+  height: 40%;        /* cobre metade da tela */
+  background-color: rgba(255, 234, 3, 0.95); /* amarelo com quase total opacidade */
+  z-index: 1;
+}
+
+/* Conteúdo dentro da seção */
+.entre-em-contato > * {
+  position: relative;
+  z-index: 2; /* garante que o conteúdo fique sobre o overlay */
+  margin-top: 4em;
+}
+
+
+
+.entre-em-contato div {
+  display: flex;
+  flex-direction: column;      /* h2 acima do p */
+  align-items: center;         /* centraliza texto dentro do bloco */
+  text-align: center;
+  padding: 6em;
+}
+
+.entre-em-contato h2 {
+  margin: 0 0 5px 0;           /* pequeno espaçamento abaixo do título */
+  font-size: 3em;
+  color: #000;
+
+}
+
+.entre-em-contato p {
+  margin: 0;
+  font-weight: normal;         /* deixa o texto do conteúdo mais leve */
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.entre-em-contato h1 {
+   font-family: 'Anton', sans-serif;
+  color: rgba(255, 234, 3, 0.95);
+  font-size: 3em;
+  text-align: left;        /* alinha o texto à esquerda */
+  margin: 0;
+  position: absolute;      /* posiciona em relação à seção */
+  top: 2em;                /* distância do topo da seção */
+  left: 2em;               /* distância da borda esquerda */
+  z-index: 2;              /* acima do overlay */
+    transform: skew(-15deg); 
+}
+
+.footer-contato {
+  position: absolute;       /* posiciona em relação à seção */
+  bottom: 1em;              /* distância da borda inferior */
+  width: 100%;              /* ocupa toda largura da seção */
+  text-align: center;       /* centraliza o texto horizontalmente */
+  font-size: 0.9em;         /* tamanho menor */
+  color: #000;              /* cor do texto */
+  z-index: 2;               /* acima do overlay */
+  font-weight: normal;
+}
