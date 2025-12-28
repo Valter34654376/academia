@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 header {
   background-image: url('./image/Fundo header(2).png');
   background-size: cover;
@@ -298,3 +300,265 @@ card, p.card-text {
   z-index: 2;
   font-weight: normal;
 }
+
+
+
+
+/* CSS só para telas até 768px */
+@media (max-width: 768px) { 
+ header {
+  background-image: url('./image/Fundo header(2).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 103vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+
+h2 {
+  position: center;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.8em;
+  color: white;
+}
+
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 90px;
+  background-image: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1.1;
+  z-index: 0;
+  margin-left: -50px;
+}
+
+
+.sobre-imagem {
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+ 
+}
+
+.sobre-imagem img {
+  max-width: 125px;
+  border-radius: 10px;
+}
+
+.sobre-imagem img:first-child {
+  display: block;
+}
+
+#img1 {
+  margin-top: -80px;
+  margin-left: 300px;
+}
+
+#imag2 {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+
+.Sobre .container {
+  display: block;
+  max-width: 1200px;
+  gap: 150px;
+  margin-top: -160px;
+}
+
+.cards {
+  display: block;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 4em;
+  
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-left: 2px;
+}
+
+.card img {
+
+  width: 330px;
+  height: 100% ;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+
+
+.oque-oferecemos {
+  background-color: #1a1a1a;
+  padding: 50px 20px;
+  background-color: #141414;
+  padding: 50px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Oque-oferecemso h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 60PX;
+  color: rgba(250, 254, 14, 0.978);
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 100%;
+  transform: skew(-15deg);
+}
+
+.oque-oferecemos h2, p {
+  height: 60px;
+  color: white;
+}
+
+.Oque-oferecemos {
+  margin-top: -150px;
+  align-items: center;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 2em;
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.978);
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  margin: 0;
+  transform: skew(-15deg);
+}
+
+card, p.card-text {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 359%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  background-color: rgba(250, 254, 14, 0.978);
+}
+
+.entre-em-contato h2 {
+  margin: 0 0 5px 0;
+  font-size: 1em;
+  color: #000;
+}
+
+.entre-em-contato div {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+   top: -50px;
+}
+
+
+.entre-em-contato > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.entre-em-contato h2 {
+  margin: 0 0 5px 0;
+  font-size: 1.6em;
+  color: #000;
+}
+
+.entre-em-contato p {
+  margin: 0;
+  font-weight: normal;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.entre-em-contato h1 {
+  font-family: 'Anton', sans-serif;
+  color: rgba(255, 234, 3, 0.95);
+  font-size: 3em;
+  text-align: left;
+  margin: 0;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 2;
+  transform: skew(-15deg);
+}
+
+
+
+.footer-contato {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  color: #000;
+  z-index: 2;
+  font-weight: normal;
+ 
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
